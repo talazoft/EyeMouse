@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( EyeDetector )
+find_package( OpenCV REQUIRED core highgui imgproc objdetect imgcodecs videoio)
+add_executable( EyeDetector EyeDetector.cpp )
+target_link_libraries( EyeDetector ${OpenCV_LIBS} )
